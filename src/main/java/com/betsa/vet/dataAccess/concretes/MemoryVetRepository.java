@@ -12,7 +12,7 @@ import com.betsa.vet.entities.Vet;
 //and using fake database 
 
 @Repository //this class is a dataAccess object
-public class MemoryVetRepository implements VetRepository{
+public class MemoryVetRepository{
 	List<Vet> vets;
 
 	public MemoryVetRepository() {
@@ -23,9 +23,9 @@ public class MemoryVetRepository implements VetRepository{
 		vets.add(new Vet(3, "Ayşe", "Çiçek", "dentist", 3));	
 	}
 
-	@Override
-	public List<Vet> getAll() {
-		return vets;
-	}
+//	@Override
+//	public List<Vet> getAll() {
+//		return vets;
+//	}
 
 }

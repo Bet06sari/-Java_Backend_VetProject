@@ -21,7 +21,7 @@ public class VetManager implements VetService{
 	@Override
 	public List<Vet> getAll() {
 		//business programs
-		return vetRepository.getAll();
+		return vetRepository.findAll();
 	}
 
 }

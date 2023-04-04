@@ -1,11 +1,26 @@
 package com.betsa.vet.entities;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
 //this is the use without lombok
 
+@Document
 public class Vet {
+	@Id
 	private int id;
+	
+	@Field(name = "name")
 	private String name;
+	
+	@Field(name = "surname")
 	private String surname;
+	
+	@Field(name = "field")
 	private String field;
+	
+	@Field(name = "yearsOfExperience")
 	private int yearsOfExperience;
 	
 	public Vet() {

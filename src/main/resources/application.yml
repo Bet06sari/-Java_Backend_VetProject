@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      database: mongo-vet
+      uri: mongodb://localhost:27017
